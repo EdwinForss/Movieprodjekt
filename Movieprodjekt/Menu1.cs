@@ -23,11 +23,11 @@ namespace Movieprodjekt
             {
                 case '1':
 
-                  //Lägga in metod
+                  Movie();
 
                 case '2':
 
-                    //Lägga in
+                  
                     
                     break;
             }
