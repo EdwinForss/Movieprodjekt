@@ -17,7 +17,7 @@ namespace Movieprodjekt
         public float Vote_Average { get; set; }
         public string HomePage { get; set; }
         public string Poster_Path { get; set; }
-        public class Genre
+        public class Genre;
         public string Name { get; set; }
         
 
