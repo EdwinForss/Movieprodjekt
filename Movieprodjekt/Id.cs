@@ -24,7 +24,7 @@ namespace Movieprodjekt
         public string Name { get; set; }
         
 
-        public void PrintFoundMoive()
+        public static void PrintFoundMoive()
         {
             Console.WriteLine("Title: {0}", Title);
             Console.WriteLine("\nDescreption: {0}", Overview);
