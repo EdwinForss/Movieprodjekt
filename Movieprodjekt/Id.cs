@@ -22,10 +22,6 @@ namespace Movieprodjekt
             public string Name { get; set; }
         }
 
-        public void SearchForMoive()
-        {
-
-        }
         public void PrintFoundMoive()
         {
             Console.WriteLine("Title: {0}", Title);
