@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Movieprodjekt
 {
-    Public class FindByID
-    {
+
+      public class FindByID
+     {
+
+
         public string Title { get; set; }
         public string Overview { get; set; }
         public string Original_Language { get; set; }
