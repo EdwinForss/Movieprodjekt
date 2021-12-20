@@ -6,7 +6,7 @@ namespace Movieprodjekt
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PrintFirstMenu();
         }
     }
 }
