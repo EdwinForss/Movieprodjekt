@@ -31,7 +31,7 @@ namespace Movieprodjekt
 
              string responseContent = await response.Content.ReadAsStringAsync();
             
-             FindById findbyid = JsonConvert.DeserializeObject<FindByID>(responseContent);
+             FindByID findbyid = JsonConvert.DeserializeObject<FindByID>(responseContent);
 
                 Console.WriteLine(findbyid);
             }
