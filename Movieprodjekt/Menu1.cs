@@ -23,7 +23,7 @@ namespace Movieprodjekt
             {
                 case '1':
 
-                 APIMovie.Movie();
+                    APIMovie.Movie().Wait(); 
 
 
                     break;
