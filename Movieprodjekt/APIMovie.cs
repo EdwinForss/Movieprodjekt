@@ -31,17 +31,9 @@ namespace Movieprodjekt
 
              string responseContent = await response.Content.ReadAsStringAsync();
             
-             FindByID findbyid = JsonConvert.DeserializeObject<FindByID>(responseContent);
+             FindById findbyid = JsonConvert.DeserializeObject<FindByID>(responseContent);
 
-                Console.WriteLine("Title: {0}", Title);
-                Console.WriteLine("\nDescreption: {0}", Overview);
-                Console.WriteLine("\nLanguage: {0}", Original_Language);
-                Console.WriteLine("Runtime: {0} min", RunTime);
-                Console.WriteLine("Release date: {0}", Release_Date);
-                ShowAllGenres();
-                Console.WriteLine("Avreage Vote: {0}", Vote_Average);
-                Console.WriteLine("Homepage: {0}", HomePage);
-                Console.WriteLine("Poster adress: {0}", Poster_Path);
+                Console.WriteLine(findbyid);
             }
 
 
@@ -51,7 +43,7 @@ namespace Movieprodjekt
 
             }
 
-                
+            Menu1.PrintFirstMenu();
 
 
 
