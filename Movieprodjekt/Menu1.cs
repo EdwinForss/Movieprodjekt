@@ -23,15 +23,17 @@ namespace Movieprodjekt
             {
                 case '1':
 
-                    Movie();
+                 APIMovie.Movie();
 
 
                     break;
 
                 case '2':
 
-                    
-                    
+
+                    int delay = 200;
+                    System.Threading.Thread.Sleep(delay);
+
                     break;
             }
         }
