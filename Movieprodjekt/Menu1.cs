@@ -8,36 +8,51 @@ namespace Movieprodjekt
 {
     class Menu1
     {
-        public static void PrintFirstMenu()
+        public static async Task PrintFirstMenu()
         {
             Console.WriteLine("Välj vad du vill göra:");
             Console.WriteLine("1)Sök efter film med ID");
             Console.WriteLine("2)avsluta pogrammet");
 
-        }
+            int userInput = Convert.ToInt32(Console.ReadLine());
 
-        public static void UserChoice()
-        {
-            float x = float.Parse(Console.ReadLine());
-            switch(x)
+            try
             {
-                case '1':
 
-                    APIMovie.Movie().Wait(); 
+      
+             switch(userInput)
+             {
+                case 1:
 
+                        await APIMovie.Movie().ConfigureAwait(false);
+                        Menu1.StartmenuChoice();
 
-                    break;
+                        break;
 
-                case '2':
-
+                case 2:
+                        Console.WriteLine("Hejdå!");
 
                     int delay = 200;
                     System.Threading.Thread.Sleep(delay);
 
                     break;
+
+                    
+                                
+             }
+            
+            }
+            catch
+            {
+                Console.WriteLine("Fel! försök igen");
+                
             }
         }
-        
+        public static void StartmenuChoice()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 
 

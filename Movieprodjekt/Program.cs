@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Movieprodjekt
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            PrintFirstMenu();
+            await Menu1.PrintFirstMenu().ConfigureAwait(false);
+
         }
     }
 }
