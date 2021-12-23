@@ -11,7 +11,7 @@ namespace Movieprodjekt
     {
 
 
-        public string Title { get; set; }
+        public string original_title { get; set; }
         public string Overview { get; set; }
         public string Original_Language { get; set; }
         public int RunTime { get; set; }
